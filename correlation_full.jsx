@@ -29,7 +29,7 @@ const SECTORS = Object.keys(SECTOR_META);
 const CRYPTOS = Object.keys(CRYPTO_META);
 const ALL = [...SECTORS, ...CRYPTOS];
 
-export default function CorrelationDashboard() {
+function CorrelationDashboard() {
   const [visible, setVisible] = useState(new Set(ALL));
   const [filter, setFilter] = useState("all");
 
